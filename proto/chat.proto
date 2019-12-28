@@ -1,0 +1,20 @@
+syntax = "proto3";
+package manlihyang;
+
+service Chat {
+    rpc join (stream Message) returns (stream Message) {}
+    rpc send (Message) returns (Message) {} 
+}
+
+message JoinMessage {
+    string user = 1;
+    string content = 2;
+}
+
+message Message {
+    int32 serviceCode = 1;
+    string usn = 2;     // 본인 
+    string biUsn = 3;   // 상대
+    string email = 4;
+    string content = 5;
+}
