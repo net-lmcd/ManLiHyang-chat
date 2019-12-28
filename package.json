@@ -1,0 +1,29 @@
+{
+  "name": "grpchat-s",
+  "version": "1.0.0",
+  "description": "ManLiHyang chat server",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phantasmicmeans/grpchat-s.git"
+  },
+  "author": "phantasmicmeans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phantasmicmeans/grpchat-s/issues"
+  },
+  "homepage": "https://github.com/phantasmicmeans/grpchat-s#readme",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.3",
+    "async": "^3.1.0",
+    "grpc": "^1.24.2",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7"
+  }
+}
