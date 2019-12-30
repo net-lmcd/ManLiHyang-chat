@@ -6,17 +6,14 @@ admin.initializeApp({
     databaseURL: "https://manlihyang-55bb9.firebaseio.com"
 })
 
-const registrationToken = 'test-token';
-const registrationTokens = [
-    'abcdefg',
-    'hijklmn',
-    'opqrefs',
-    'vafsdfs'
-];
+const registrationToken_phone = 'dUXt1GJqxqg:-pwDI-3vUp1oUFbm9ex3u7H0MUlcC44D3_hU6DCNDkGGBn40Dixd0hFy2m6bvm-7g0VCIq2n09_QXdpWxCy6Z';
 
 const message = {
-    data: {message: 'test message'},
-    token: registrationToken
+    notification: {
+        title: 'TEST TITLE',
+        body: 'TEST BODY'
+    },
+    token: registrationToken_phone
 }
 
 const messages = {
@@ -53,3 +50,8 @@ const sendMsgToMulticast = (message) => {
             }
         });
 }
+
+const arr = [0,1];
+arr.forEach(ele => sendMsgToPeer(message));
+
+module.exports.sendMsgToPeer = sendMsgToPeer;
