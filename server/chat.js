@@ -1,3 +1,5 @@
+const fcm = require('../fcm/fcm');
+
 let users = [];
 
 // Receive message from client joining
